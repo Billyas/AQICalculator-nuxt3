@@ -35,11 +35,12 @@ jobs:
         run: |
           npm install
           npm run generate
+          cp -r .output/public dict
 
       - name: Deploy to GitHub Pages
         uses:  crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: .output/public
+          build_dir: dict
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
