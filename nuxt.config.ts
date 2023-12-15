@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       ]
     },
     baseURL: '/AQICalculator-nuxt3/',
-    buildAssetsDir: "/_nuxt/",
+    buildAssetsDir: "/assets/",
   },
   devtools: { enabled: false },
   build: {
