@@ -20,7 +20,8 @@ export default defineNuxtConfig({
         { src: 'https://hm.baidu.com/hm.js?871876fea253bad9c6a70a9b3ff3c2ff'}
       ]
     },
-    baseURL: '/AQICalculator-nuxt3/'
+    baseURL: '/AQICalculator-nuxt3/',
+    buildAssetsDir: "/_nuxt/",
   },
   devtools: { enabled: false },
   build: {
@@ -42,5 +43,7 @@ export default defineNuxtConfig({
       },
     },
   },
-
+  router: {
+    base: '/AQICalculator-nuxt3/',
+  },
 })
